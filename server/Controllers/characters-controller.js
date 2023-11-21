@@ -5,7 +5,7 @@ const handleError = (res, error) => {
 };
 
 export const getAllCards = (req, res) => {
-  Cards.find()
+  Characters.find()
     .then((char) => {
       res.status(200).json(char);
     })
